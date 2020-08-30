@@ -64,10 +64,20 @@ h2 {
   font-size:20px;
   font-family: 'Prata', serif;
   text-align:center;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
 p {  
-  font-size:12px; 
+  font-size:12px;
+  padding:30px;
+}
+
+.myphoto {
+ width:295px;
+ height:325px;
+ display:block;
+ margin:auto;
 }
 
 .About .Career{
@@ -114,6 +124,15 @@ display: block;
 content: "";
 border-left: 1px solid black;
 }
+
+.waterski {
+ width:295px;
+ height:205px;
+ display:block;
+ margin:auto;
+}
+
+
 section.about .career .history dt { width: 30%;
 min-height: 24px;
 }
