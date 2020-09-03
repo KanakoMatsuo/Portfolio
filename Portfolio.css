@@ -11,7 +11,7 @@ body {
 
 header {
   background: 
-   linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255, 0.01)) center/cover no-repeat,
+   linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255, 0.001)) center/cover no-repeat,
    url("./images/richard-rivas-hyWiznXNF1A-unsplash.jpg") center/cover no-repeat;
   height: 600px;
   overflow: hidden;
@@ -29,10 +29,11 @@ li {
   /*font-family: 'Alex Brush', cursive;*/
   font-family: 'Prata', serif;
   margin-right: 40px;
+  line-height:35px;
 }
 
 li:last-child {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 header h1 {
@@ -74,13 +75,13 @@ p {
 }
 
 .myphoto {
- width:295px;
- height:325px;
+ width:50%;
+ height:50%;
  display:block;
  margin:auto;
 }
 
-.About .Career{
+.About {
   /*background:url("./images/background.jpg") center/cover no-repeat;*/
   background: 
     linear-gradient(45deg, rgba(255,255,255,1), rgba(255,255,255, 0.3)) center/cover no-repeat,
@@ -88,14 +89,63 @@ p {
   height: 600px;
   overflow: hidden;
 }
+.About p{
+  background:#9d3448;
+  background: rgba(152,52, 72, 0.15);
+  padding-top:120px;
+  margin-top:-100px;
+}
+.waterski {
+ width:70%;
+ height:70%;
+ display:block;
+ margin:auto;
+}
+
+@media screen and (min-width:979px) {
+  li{
+    font-size:25px;
+    line-height:30px;
+  }
+  h2{
+    font-size:30px;
+  }
+  p{
+    font-size:14px;
+    line-height:30px;
+  }
+  .myphoto {
+ width:295px;
+ height:325px;
+  }
+  .About div{
+    display:flex;
+    margin:0 20%;
+  }
+  .About p {
+   padding-top: 40px;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    padding-left: 166px;
+    margin-left: -145px;
+  }
+  .Career div{
+    display:flex;
+  }
+  .waterski {
+ width:295px;
+ height:205px;
+  }
+}
 
 .Career {
-  background:;
+  background:#ffffff;
   
 }
 .history {
   display: flex;
   flex-wrap: wrap;
+  margin:0 10px;
 }
 
 .history dt {
@@ -125,13 +175,6 @@ content: "";
 border-left: 1px solid black;
 }
 
-.waterski {
- width:295px;
- height:205px;
- display:block;
- margin:auto;
-}
-
 
 section.about .career .history dt { width: 30%;
 min-height: 24px;
@@ -139,7 +182,23 @@ min-height: 24px;
 section.about .career .history dd { margin: 0;
 margin: 0;
  width: 70%; 14 }
- {source.txt} 
+
+.Works{
+  background:#d7cebe;
+}
+.Works p{
+  display:flex;
+  text-align:center;
+  width:100%;
+} 
+
+.Contact{
+  background:url("./images/brianne-reed-5fKVGNg4QaM-unsplash.jpg") center/cover no-repeat;
+}
+
+.Contact h2{
+  color:#ffffff;
+}
 
 
 /* -------------------- wrapper -------------------- */
