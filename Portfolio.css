@@ -7,22 +7,27 @@ body {
 	color: #333;
 	font-size: 13px;
 	line-height: 150%;
+	background: #fff;
+}
+
+section {
+  overflow: hidden;
 }
 
 header {
   background: 
-   linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255, 0.001)) center/cover no-repeat,
+   linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255, 0.001) 50%, rgba(255,255,255,0)) center/cover no-repeat,
    url("./images/richard-rivas-hyWiznXNF1A-unsplash.jpg") center/cover no-repeat;
   height: 600px;
   overflow: hidden;
 }
 
-ul {
+header ul {
   display: flex;
   justify-content: flex-end;
 }
 
-li {
+header li {
   color: #ffffff;
   font-size: 18px;
   list-style: none;
@@ -32,7 +37,7 @@ li {
   line-height:35px;
 }
 
-li:last-child {
+header li:last-child {
   margin-right: 25px;
 }
 
@@ -62,6 +67,14 @@ header h1 {
 
 h2 {
   color: #312622;
+  font-size:22px;
+  font-family: 'Prata', serif;
+  text-align:center;
+  padding-top:15px;
+}
+
+h3 {
+  color: #312622;
   font-size:20px;
   font-family: 'Prata', serif;
   text-align:center;
@@ -86,7 +99,7 @@ p {
   background: 
     linear-gradient(45deg, rgba(255,255,255,1), rgba(255,255,255, 0.3)) center/cover no-repeat,
     url("./images/background.jpg") center/cover no-repeat;
-  height: 600px;
+  height: 856px;
   overflow: hidden;
 }
 .About p{
@@ -102,21 +115,216 @@ p {
  margin:auto;
 }
 
+.Career {
+  background: transparent;
+    margin-top: -300px;
+    margin-bottom: 75px;
+}
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 8px;
+  position: relative;
+}
+
+.history dt {
+  width: 10%;
+  text-align: center;
+  font-size:11px;
+}
+
+.history dd {
+  width: calc(90% - 40px);
+  text-align: left;
+  margin : 0;
+  margin-left: 30px;
+  font-size:11px;
+}
+
+.history dd.indent1 {
+  width: calc(90% - 60px);
+  margin-left: 60px;
+}
+
+.history:before {
+ top: 0;
+ bottom: 0;
+ left: 15%;
+ position: absolute;
+ display: block;
+ content: "";
+ border-left: 1px solid black;
+ border-color:#9d3448;
+}
+
+section.about .career .history dt { 
+  width: 30%;
+  min-height: 24px;
+}
+section.about .career .history dd { 
+  margin: 0;
+  width: 70%;
+}
+
+.Works{
+  background:#d7cebe;
+}
+.Works p{
+  width:80%;
+  padding: 10px 30px;
+}
+
+.Works ul {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  width:90%;
+  margin-left: -20px;
+}
+.Works li{
+  width:calc(100% / 2 - 10px);
+  display:block;
+}
+
+.box {
+  width: 100%;
+}
+.img-box {
+        width: 100%;
+        padding-top: 70%;
+        position: relative;
+}
+.Works img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.Works ul li div p {
+  top: 60%;
+  font-size:10px;
+  text-align:center;
+  padding:0px;
+ }
+
+.Contact{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/brianne-reed-5fKVGNg4QaM-unsplash.jpg")center/cover no-repeat;
+  height: 638px;
+  overflow: hidden;
+}
+
+.Contact h2{
+  color:#ffffff;
+}
+
+h4 {
+  color: #312622;
+  font-size:12px;
+  font-family: 'Prata', serif;
+  text-align:center;
+  line-height: 36px;
+}
+
+form {
+  text-align:center;
+  font-family: 'Prata', serif;
+  color:#ffffff;
+  font-size:15px;
+}
+
+form ul {
+  list-style: none;
+  width:77%;
+  max-width:300px;
+  height:50px;
+  margin: 0 auto;
+  padding-inline-start: 0;
+  display:block;
+}
+
+label{
+  width:100%;
+  line-height:35px;
+}
+input, textarea{
+  box-sizing: border-box;
+  width:100%;
+  height:35px;
+  padding-left:15px;
+  font-size:13px;
+}
+textarea{
+  height:200px;
+  padding-top:10px;
+}
+
+form ul li {
+  margin-bottom:30px;
+  width:100%;
+  text-align:left;
+}
+button{
+  display:block;
+  width: 74px;
+  height: 40px;
+  font-size:14px;
+  font-family: 'Prata', serif;
+  color:black;
+  text-align:center;
+  margin:10px auto;
+}
+.Copyright{
+  background:#d1b38d;
+}
+
+/* -------------------- wrapper -------------------- */
+#wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background-color: #FFF;	
+    top: 10px;
+}
+
 @media screen and (min-width:979px) {
   li{
-    font-size:25px;
-    line-height:30px;
+    font-size:30px;
+    line-height:40px;
+  }
+  header{
+    position:relative;
+  }
+  .A{
+    font-size:96px;
+    position:absolute;
+    top: -50px;
+    left: 155px;
+  }
+  .B{
+    font-size: 56px;
+    position: absolute;
+    top: 40px;
+    left: 305px;
   }
   h2{
-    font-size:30px;
+    font-size:36px;
+    line-height:60px;
+  }
+  h3{
+    font-size:22px;
+    line-height:44px;
+    text-align:left;
+      margin:0 20%;
   }
   p{
     font-size:14px;
-    line-height:30px;
+    line-height:29px;
   }
   .myphoto {
- width:295px;
- height:325px;
+  width:295px;
+  height:325px;
   }
   .About div{
     display:flex;
@@ -131,84 +339,43 @@ p {
   }
   .Career div{
     display:flex;
+    margin:0 20%;
+    margin-bottom: 50px;
+  }
+
+  .history dt,.history dd {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  
+  .history:before {
+  margin-left: -1%;
   }
   .waterski {
- width:295px;
- height:205px;
+  width:295px;
+  height:205px;
+  margin-left: -15px;
   }
-}
-
-.Career {
-  background:#ffffff;
-  
-}
-.history {
-  display: flex;
-  flex-wrap: wrap;
-  margin:0 10px;
-}
-
-.history dt {
-  width: 10%;
+  .Works p{
   text-align: center;
-}
-
-.history dd {
-  width: calc(90% - 40px);
-  text-align: left;
-  margin : 0;
-  margin-left: 40px;
-}
-
-.history dd.indent1 {
-  width: calc(90% - 60px);
-  margin-left: 60px;
-}
-
-
-.history:before {
-height: 100%;
-left: 10%;
-position: absolute;
-display: block;
-content: "";
-border-left: 1px solid black;
-}
-
-
-section.about .career .history dt { width: 30%;
-min-height: 24px;
-}
-section.about .career .history dd { margin: 0;
-margin: 0;
- width: 70%; 14 }
-
-.Works{
-  background:#d7cebe;
-}
-.Works p{
-  display:flex;
-  text-align:center;
   width:100%;
-} 
-
-.Contact{
-  background:url("./images/brianne-reed-5fKVGNg4QaM-unsplash.jpg") center/cover no-repeat;
-}
-
-.Contact h2{
-  color:#ffffff;
-}
-
-
-/* -------------------- wrapper -------------------- */
-#wrapper {
-    width: 100%;
-    margin: auto;
-    padding: 0px;
-    border: 0px;
-    background-color: #FFF;	
-    top: 10px;
-}
-
-
+  padding:0;  
+  }
+  .Works ul{
+    max-width:1100px;
+    margin:50px auto;
+    padding-inline-start:0;
+  }
+  .Works li{
+    width:calc(100% / 3 - 20px);
+  }
+  .yoga{
+    height: 246px;
+  }
+  .Contact{
+    height:820PX;
+  }
+  form ul li{
+  font-size:22px;
+  }
+  }
