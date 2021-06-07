@@ -56,6 +56,7 @@ header h1 {
   font-size:56px;
   font-family:'Alex Brush';
   justify-content:center;
+  text-shadow: 1px 1px 1px #808080;
 }
 
 .B {
@@ -63,6 +64,7 @@ header h1 {
   color:#9d3448;
   font-size:32px;
   font-family:'Prata', serif;
+  text-shadow: 1px 1px 1px #808080;
 }
 
 h2 {
@@ -301,12 +303,14 @@ button{
     position:absolute;
     top: -50px;
     left: 155px;
+    text-shadow: 1px 2px 3px #808080;
   }
   .B{
     font-size: 56px;
     position: absolute;
     top: 40px;
     left: 305px;
+    text-shadow: 1px 2px 3px #808080;
   }
   h2{
     font-size:36px;
